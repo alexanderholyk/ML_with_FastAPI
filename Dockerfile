@@ -13,8 +13,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application code to the container at /app
 COPY . /app
 
-# make port 8501 available to the world outside this container
-EXPOSE 8501
+# make port 80 available to the world outside this container
+EXPOSE 80
 
 # Define the command to run the application when the container starts
-CMD ["streamlit", "run", "app.py"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]

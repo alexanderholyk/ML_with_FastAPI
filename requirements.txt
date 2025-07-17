@@ -1,6 +1,7 @@
-# Use: pip install -r requirements.txt
-
-streamlit==1.44.1
-pandas==2.2.3
-scikit-learn==1.6.1
+fastapi==0.115.9
 joblib==1.4.2
+opentelemetry-instrumentation-fastapi==0.54b0
+pydantic==2.11.3
+pydantic_core==2.33.1
+uvicorn==0.34.2
+scikit-learn==1.6.1
