@@ -12,20 +12,20 @@ Docker and Python must be installed on the user's computer. Further libraries ar
 ### API Endpoints
 
 - /health 
-    method: `GET`
-    A simple endpoint to confirm that the API is running.
+    - method: `GET`
+    - A simple endpoint to confirm that the API is running.
 
 - /predict
-    method: `POST`
-    Takes a text input and returns the predicted sentiment.
+    - method: `POST`
+    - Takes a text input and returns the predicted sentiment.
 
 - /predict_proba
-    method: `POST`
-    Takes a text input and returns the predicted sentiment along with its confidence score.
+    - method: `POST`
+    - Takes a text input and returns the predicted sentiment along with its confidence score.
 
 - /example
-    method: `GET`
-    Returns a random review from the original IMDB training dataset. This is useful for testing the prediction endpoints.
+    - method: `GET`
+    - Returns a random review from the original IMDB training dataset. This is useful for testing the prediction endpoints.
 
 ### How to clone and run in Docker
 
